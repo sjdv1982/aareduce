@@ -1,0 +1,33 @@
+canonical:
+  - command: aareduce.py infile.pdb infile-aa.pdb
+    executable: true
+  - command: aareduce.py infile.pdb infile-aa.pdb --heavy
+    executable: true
+  - command: aareduce.py infile.pdb infile-aa.pdb --heavy --rna
+    executable: true
+  - command: aareduce.py infile.pdb infile-aa.pdb --heavy --dna
+    executable: true
+  - command: aareduce.py infile.pdb infile-aa.pdb --heavy --rna --nalib
+    executable: true
+  - command: aareduce.py infile.pdb infile-aa.pdb --heavy --dna --nalib
+    executable: true
+  - command: aareduce.py infile.pdb infile-aa.pdb --heavy --rna --nalib --termini
+    executable: true
+  - command: aareduce.py infile.pdb infile-aa.pdb --heavy --dna --nalib --termini
+    executable: true
+  - command: aareduce.py infile.pdb infile-aa.pdb --heavy --rna --nalib --termini --mutate mutate.list
+    executable: true
+  - command: aareduce.py infile.pdb infile-aa.pdb --heavy --dna --nalib --termini --mutate mutate.list
+    executable: true
+  - command: aareduce.py infile.pdb infile-aa.pdb --heavy --rna --nalib --termini --mutate mutate.list --modbase
+    executable: true
+  - command: aareduce.py infile.pdb infile-aa.pdb --heavy --dna --nalib --termini --mutate mutate.list --modbase
+    executable: true
+  - command: aareduce.py infile.pdb infile-aa.pdb --heavy --rna --nalib --mutate mutate.list
+    executable: true
+  - command: aareduce.py infile.pdb infile-aa.pdb --heavy --dna --nalib --mutate mutate.list
+    executable: true
+  - command: aareduce.py infile.pdb infile-aa.pdb --heavy --rna --nalib --mutate mutate.list --modbase
+    executable: true
+  - command: aareduce.py infile.pdb infile-aa.pdb --heavy --dna --nalib --mutate mutate.list --modbase
+    executable: true
