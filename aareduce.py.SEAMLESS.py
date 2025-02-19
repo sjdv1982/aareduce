@@ -215,6 +215,9 @@ for action in parser._actions:
                 order.append(action.option_strings[0])
             elif value in rev_if_results:
                 value = rev_if_results[value]
+            elif action.dest == "pdb":
+                if not args.batch:
+                    value = "infile.pdb"
             order.append(value)
     elif isinstance(action, argparse._AppendAction):
         if len(value):
