@@ -150,6 +150,8 @@ if_files = []
 
 libfiles0 = ["aareduce.py", "pdbcomplete.py", "topology.py"]
 libfiles0 += ["oplsx-top.json", "oplsx.trans", "dna-rna-top.json", "dna-rna.trans"]
+if args.nalib:
+    libfiles0.append("rmsdlib.py")
 
 for libfile in libfiles0:
     mlibfile = os.path.abspath(os.path.join(currdir, libfile))
